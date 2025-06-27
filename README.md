@@ -57,5 +57,8 @@ This project is part of an internship task to connect a Java application to a My
 
 ```bash
 git clone https://github.com/shivakasula48/DataBaseApplication.git
+
+```
+```
 cd DataBaseApplication
 ```
