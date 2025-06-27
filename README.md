@@ -15,31 +15,47 @@ This project is part of an internship task to connect a Java application to a My
 
 *DURATION* : 8WEEKS
 
-## Features
-- **Database Connection**:
-  - Uses JDBC to connect to a MySQL database.
-  - Configurable database URL, username, and password.
+---
 
-- **Homepage Design**:
-  - GUI built with JFrame in Java.
-  - Includes navigation buttons:
-    - View Profile
-    - Settings
-    - Logout
+
+
+## Key Features
+
+### Database Connectivity
+- Establishes a secure connection with MySQL using JDBC.
+- Configurable database credentials for flexibility.
+
+### User-Friendly Interface
+- A well-designed homepage built using Java Swing (JFrame).
+- Navigation buttons for user interactions:
+  - **View Profile**: Fetches and displays user details from the database.
+  - **Settings**: Placeholder for future settings functionality.
+  - **Logout**: Closes the application.
+
+### Data Management
+- Retrieves user data from the `users` table in the database.
+- Displays user information through a pop-up dialog.
 
 ---
 
 
-## Prerequisites
-- **Java Development Kit (JDK)**: Version 8 or later.
-- **NetBeans IDE**: Recommended for running the project.
-- **XAMPP**: For running MySQL locally.
-- **MySQL Connector/J**: Ensure the JDBC driver `.jar` file is added to the project.
+## Technologies Used
+
+- **Java**: Programming language for application logic.
+- **MySQL**: Database management system for storing user information.
+- **JDBC**: API for connecting the application to the MySQL database.
+- **NetBeans IDE**: Development environment.
+- **XAMPP**: Tool for running MySQL locally.
 
 ---
 
 ## Setup Instructions
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/Task4_Project.git
-   cd Task4
+
+### 1. Clone the Repository
+- Open your terminal or command prompt.
+- Run the following commands to clone the repository and navigate into the project directory:
+
+```bash
+git clone https://github.com/shivakasula48/DataBaseApplication.git
+cd DataBaseApplication
+```
