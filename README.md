@@ -94,7 +94,7 @@ CREATE TABLE users (
     email VARCHAR(100),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
+```
 #### Insert Sample Data
 - Add some sample records for testing by running the following SQL query in phpMyAdmin:
 
@@ -103,3 +103,57 @@ INSERT INTO users (username, password, email)
 VALUES 
 ('testuser', 'testpassword', 'testuser@example.com'),
 ('admin', 'adminpassword', 'admin@example.com');
+```
+
+### 4. Configure the Java Project
+
+#### Open the Project
+- Open the project in **NetBeans IDE**.
+
+#### Add MySQL Connector/J to the Project
+1. Right-click on the project in NetBeans.
+2. Go to **Properties > Libraries > Add JAR/Folder**.
+3. Select the MySQL Connector `.jar` file (e.g., `mysql-connector-java-8.x.x.jar`).
+
+#### Modify the `DatabaseConnection.java` File
+- Update the database details in the file with your configuration:
+
+```java
+private static final String URL = "jdbc:mysql://localhost:3306/testdb";
+private static final String USER = "root";
+private static final String PASSWORD = "";
+```
+### 5. Run the Application
+
+#### Run `Homepage.java` in NetBeans
+1. Right-click `Homepage.java` in the project explorer.
+2. Select **Run File**.
+
+#### Interact with the Application
+- Use the **"View Profile"** button to fetch user details.
+
+---
+
+### 6. Troubleshooting
+
+#### Database Connection Fails
+- Ensure MySQL is running in XAMPP.
+- Verify the database name, username, and password in `DatabaseConnection.java`.
+
+#### JAR File Missing
+- Ensure the MySQL Connector `.jar` file is added to the project’s classpath.
+
+
+
+## OUTPUT
+
+
+
+
+
+# License
+
+This project is open-source and free to use by anyone for personal or educational purposes.  
+Feel free to modify, distribute, and use the code as long as proper credit is given to the original author, **Kasula Shiva**.
+
+
